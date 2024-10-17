@@ -1,0 +1,21 @@
+//  Erstellen Sie die buecherMap
+let buecherMap = new Map();
+
+buecherMap.set('Der Alchemist', {preis: 1000, autor: 'Paulo Coelho', seiten: 198}); 
+buecherMap.set('1984', {preis: 1299, autor: 'George Orwell', seiten: 328});
+buecherMap.set('Harry Potter', {preis: 999, autor: 'J.K. Rowling', seiten: 728});
+
+//  Preise der Bücher ausgeben
+console.log("Preis von 'Der Alchemist':", buecherMap.get('Der Alchemist').preis);
+console.log("Preis von '1984':", buecherMap.get('1984').preis);
+console.log("Preis von 'Harry Potter':", buecherMap.get('Harry Potter').preis);
+
+// Funktion zeigeBuecher erstellen
+function zeigeBuecher(buecher) {
+    buecher.forEach((details, titel) => {
+        console.log(`${titel}: ${details.autor}, ${details.seiten} Seiten`);
+    });
+}
+
+// Funktion mit der buecherMap testen
+zeigeBuecher(buecherMap);
