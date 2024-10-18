@@ -1,0 +1,13 @@
+/* Stil für die Boxen */
+.box {
+    width: 100px; /* Breite der Box */
+    height: 100px; /* Höhe der Box */
+    background-color: lightgray; /* Ausgangsfarbe */
+    margin: 10px; /* Abstand zwischen den Boxen */
+    display: inline-block; /* Boxen nebeneinander anzeigen */
+    border: 2px solid #000; /* Rand der Boxen */
+    text-align: center; /* Text zentrieren */
+    line-height: 100px; /* Vertikale Zentrierung des Textes */
+    font-size: 18px; /* Schriftgröße */
+    transition: background-color 0.3s ease; /* Sanfter Übergang für die Farbänderung */
+}

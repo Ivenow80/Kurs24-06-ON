@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamisch ein Element hinzufügen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+    <div class="container">
+        <!-- Leeres div für den neuen Absatz -->
+        <div id="contentBox"></div>
+        <button id="addParagraph">Neuen Absatz hinzufügen</button>
+    </div>
+
+    <script>
+        // Funktion, um einen neuen Absatz hinzuzufügen
+        function addParagraph() {
+            // Erstelle ein neues p-Element
+            const newParagraph = document.createElement('p');
+            // Setze den Text des neuen Absatzes
+            newParagraph.textContent = "Dies ist ein neuer Absatz.";
+            // Füge das neue p-Element zur contentBox hinzu
+            const contentBox = document.getElementById('contentBox');
+            contentBox.appendChild(newParagraph);
+        }
+
+        // Event Listener für den Button
+        const addButton = document.getElementById('addParagraph');
+        addButton.addEventListener('click', addParagraph);
+    </script>
+</body>
+</html>

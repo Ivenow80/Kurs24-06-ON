@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Farbänderung</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="box"></div> <!-- Box-Element -->
+    
+    <script>
+        // Zugriff auf das Box-Element
+        const box = document.querySelector('.box');
+
+        // Funktion, um die Farbe zu ändern
+        function changeColor() {
+            box.style.backgroundColor = getRandomColor(); // Zufällige Farbe setzen
+        }
+
+        // Funktion, um die Ausgangsfarbe zurückzusetzen
+        function resetColor() {
+            box.style.backgroundColor = 'lightgray'; // Ursprüngliche Farbe zurücksetzen
+        }
+
+        // Funktion, um eine zufällige Farbe zu generieren
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Event Listener für mouseover und mouseout
+        box.addEventListener('mouseover', changeColor);
+        box.addEventListener('mouseout', resetColor);
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* Stil für die Container-Div */
+.container {
+    text-align: center; /* Zentriert den Inhalt */
+    margin-top: 50px; /* Abstand von oben */
+}
+
+/* Stil für das Eingabefeld */
+input[type="text"] {
+    padding: 10px; /* Innenabstand */
+    font-size: 16px; /* Schriftgröße */
+    margin-right: 10px; /* Abstand zwischen Eingabefeld und Button */
+}
+
+/* Stil für den Button */
+button {
+    padding: 10px 20px; /* Innenabstand */
+    font-size: 16px; /* Schriftgröße */
+    cursor: pointer; /* Handzeiger bei Hover */
+}
+
+/* Stil für die Ausgabe */
+#outputContainer {
+    margin-top: 20px; /* Abstand zwischen Button und Ausgabe */
+    font-size: 18px; /* Schriftgröße */
+}

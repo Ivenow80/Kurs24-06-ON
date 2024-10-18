@@ -1,0 +1,18 @@
+/* Stil für die Container-Div */
+.container {
+    text-align: center; /* Zentriert den Inhalt */
+    margin-top: 50px; /* Abstand von oben */
+}
+
+/* Stil für den Button */
+button {
+    padding: 10px 20px; /* Innenabstand */
+    font-size: 16px; /* Schriftgröße */
+    cursor: pointer; /* Handzeiger bei Hover */
+}
+
+/* Stil für die Nachrichten */
+#messageContainer {
+    margin-top: 20px; /* Abstand zwischen Button und Nachrichten */
+    font-size: 18px; /* Schriftgröße */
+}

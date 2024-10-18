@@ -1,0 +1,9 @@
+/* Stil für die Box */
+.box {
+    width: 100px; /* Breite der Box */
+    height: 100px; /* Höhe der Box */
+    background-color: lightgray; /* Ausgangsfarbe */
+    margin: 50px auto; /* Zentriert die Box horizontal */
+    border: 2px solid #000; /* Rand der Box */
+    transition: background-color 0.3s ease; /* Sanfter Übergang für die Farbänderung */
+}

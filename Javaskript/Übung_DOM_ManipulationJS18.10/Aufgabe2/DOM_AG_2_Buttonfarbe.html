@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farbe ändern</title>
+    <style>
+        #changeColorButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<button id="changeColorButton">Ändere Farbe</button>
+
+<script>
+    // Funktion zur Generierung einer zufälligen Farbe
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    // Event Listener für den Button
+    const button = document.getElementById('changeColorButton');
+    button.addEventListener('click', function() {
+        button.style.backgroundColor = getRandomColor();
+    });
+</script>
+
+</body>
+</html>

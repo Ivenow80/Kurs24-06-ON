@@ -1,0 +1,20 @@
+/* Stil für die Container-Div */
+.container {
+    text-align: center; /* Zentriert den Inhalt */
+    margin-top: 50px; /* Abstand von oben */
+}
+
+/* Stil für die contentBox */
+#contentBox {
+    border: 1px solid #ccc; /* Grauer Rand */
+    padding: 20px; /* Innenabstand */
+    margin: 20px; /* Außenabstand */
+    min-height: 50px; /* Mindesthöhe */
+}
+
+/* Stil für die Schaltfläche */
+button {
+    padding: 10px 20px; /* Innenabstand */
+    font-size: 16px; /* Schriftgröße */
+    cursor: pointer; /* Handzeiger bei Hover */
+}

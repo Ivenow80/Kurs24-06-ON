@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button mit Event Listener</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="clickMeButton">Klick mich</button>
+        <div id="messageContainer"></div> <!-- Container für die Nachricht -->
+    </div>
+
+    <script>
+        // Funktion, um ein neues p-Element hinzuzufügen
+        function addMessage() {
+            // Erstelle ein neues p-Element
+            const newParagraph = document.createElement('p');
+            // Setze den Text des neuen Absatzes
+            newParagraph.textContent = "Button wurde geklickt!";
+            // Füge das neue p-Element zur messageContainer hinzu
+            const messageContainer = document.getElementById('messageContainer');
+            messageContainer.appendChild(newParagraph);
+        }
+
+        // Zugriff auf den Button und Hinzufügen des Event Listeners
+        const clickMeButton = document.getElementById('clickMeButton');
+        clickMeButton.addEventListener('click', addMessage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eingabewert auslesen und anzeigen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="inputField" placeholder="Gib etwas ein..." /> <!-- Eingabefeld -->
+        <button id="submitButton">Absenden</button> <!-- Absenden Button -->
+        <div id="outputContainer"></div> <!-- Container für die Ausgabe -->
+    </div>
+
+    <script>
+        // Zugriff auf das Eingabefeld und den Button
+        const inputField = document.getElementById('inputField');
+        const submitButton = document.getElementById('submitButton');
+        const outputContainer = document.getElementById('outputContainer');
+
+        // Event Listener für den Button
+        submitButton.addEventListener('click', function() {
+            // Hole den eingegebenen Text
+            const inputText = inputField.value; // Alternativ: inputField.getAttribute('value')
+            // Erstelle ein neues p-Element
+            const newParagraph = document.createElement('p');
+            // Setze den Text des neuen Absatzes
+            newParagraph.textContent = inputText;
+            // Füge das neue p-Element zur Ausgabe hinzu
+            outputContainer.appendChild(newParagraph);
+            // Setze das Eingabefeld zurück
+            inputField.value = '';
+        });
+    </script>
+</body>
+</html>
