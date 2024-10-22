@@ -1,0 +1,10 @@
+.navbar {
+  background-color: rgb(176, 166, 185);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.homebtn {
+  background-color: rgb(109, 109, 194);
+}
