@@ -1,17 +1,32 @@
-//import logo from "./logo.svg";
-import "./App.css";
-import Content from "./components/layout/content/Content";
-import Footer from "./components/layout/footer/Footer";
-import Navbar from "./components/layout/navbar/Navbar";
+import React from 'react';
 
-function App() {
+// Avatar-Komponente
+function Avatar() {
   return (
-    <div className="main-container">
-      <Navbar />
-      <Content />
-      <Footer />
-    </div>
+    <img 
+      className="avatar"
+      src="https://i.imgur.com/1bX5QH6.jpg"  // Bild-URL korrekt eingebunden
+      alt="Lin Lanying"
+      width={100}
+      height={100}
+    />
   );
 }
 
-export default App;
+// Navbar-Komponente
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <h1>Meine Website</h1>
+      <Avatar /> {/* Avatar-Komponente wird hier verwendet */}
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#services">Dienstleistungen</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar; 

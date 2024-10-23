@@ -1,6 +1,5 @@
-import StandardBtn from "../../common/standard-btn/StandardBtn";
+
 import styles from "./Navbar.module.css";
-import { Avatar } from "../profile/Child";
 
 function Navbar() {
   function onClickHello() {

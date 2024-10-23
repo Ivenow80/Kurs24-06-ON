@@ -1,5 +1,3 @@
-footer {
-    background-color: rgb(160, 210, 160) ;
-    padding: 20px;
-
-}  
+.container {
+    background-color: green;
+  }

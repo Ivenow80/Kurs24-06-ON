@@ -1,0 +1,35 @@
+/* Gemeinsame Stile für alle Buttons */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Spezifische Stile für die Homepage-Schaltfläche */
+.homepage-button {
+  background-color: #4CAF50;
+}
+
+.homepage-button:hover {
+  background-color: #45a049;
+}
+
+/* Spezifische Stile für die "Über mich"-Schaltfläche */
+.uebermich-button {
+  background-color: #008CBA;
+}
+
+.uebermich-button:hover {
+  background-color: #007bb5;
+}
+
+/* Spezifische Stile für die Warenkorb-Schaltfläche */
+.warenkorb-button {
+  background-color: #f44336;
+}
+
+.warenkorb-button:hover {
+  background-color: #da190b;
+}
